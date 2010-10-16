@@ -1,0 +1,1661 @@
+<!-- BEGIN s5 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Qudo-2010</title>
+<meta name="generator" content="Spork-S5" />
+<meta name="version" content="Spork-S5 0.04" />
+<meta name="author" content="Masaru Hoshino" />
+<link rel="stylesheet" href="ui/slides.css" type="text/css" media="projection" id="slideProj" />
+<link rel="stylesheet" href="ui/opera.css" type="text/css" media="projection" id="operaFix" />
+<link rel="stylesheet" href="ui/print.css" type="text/css" media="print" id="slidePrint" />
+  <link rel="stylesheet" type="text/css" href="" />
+<script src="ui/slides.js" type="text/javascript"></script>
+</head>
+<body>
+
+<div class="layout">
+  <div id="currentSlide"></div>
+  <div id="header"></div>
+  <div id="footer">
+    <h2>Masaru Hoshino</h2>
+    <h2>masartz@gmail.com</h2>
+    <div id="controls"></div>
+  </div>
+</div>
+
+<div class="slide">
+    <h1>Qudo-2010</h1>
+    <h2>YAPC::Asia 2010</h2>
+    <h3>2010/10/15</h3>
+</div>
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>Agenda</h2>
+<ul>
+<li>Self Introduction</li>
+<li>What is Qudo &#40;Review&#41;</li>
+<li>Change Points</li>
+<li>Ohter Distribution</li>
+<li>Conclusion</li>
+</ul>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>Self Introduction</h2>
+<small>continued...</small>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>Self Introduction</h2>
+<ul>
+<li>名前：星野　将（ホシノ　マサル）</li>
+</ul>
+<small>continued...</small>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>Self Introduction</h2>
+<ul>
+<li>名前：星野　将（ホシノ　マサル）</li>
+<li>id ：masartz（マサルツ）</li>
+</ul>
+<small>continued...</small>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>Self Introduction</h2>
+<ul>
+<li>名前：星野　将（ホシノ　マサル）</li>
+<li>id ：masartz（マサルツ）</li>
+<li>所属：yusukebeさんに「おもしろい」と言ってもらえないSNSの会社</li>
+</ul>
+<small>continued...</small>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>Self Introduction</h2>
+<ul>
+<li>名前：星野　将（ホシノ　マサル）</li>
+<li>id ：masartz（マサルツ）</li>
+<li>所属：yusukebeさんに「おもしろい」と言ってもらえないSNSの会社</li>
+
+<ul>
+<li>フェイスブックよりおもしろいですよ！</li>
+</ul></ul>
+<small>continued...</small>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>Self Introduction</h2>
+<ul>
+<li>名前：星野　将（ホシノ　マサル）</li>
+<li>id ：masartz（マサルツ）</li>
+<li>所属：yusukebeさんに「おもしろい」と言ってもらえないSNSの会社</li>
+
+<ul>
+<li>フェイスブックよりおもしろいですよ！</li>
+</ul>
+<li>Qudoの開発者の中ではおそらく唯一プロダクトを実運用してない・・・</li>
+</ul>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>What is Qudo (Review)</h2>
+<small>continued...</small>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>What is Qudo (Review)</h2>
+<ul>
+<li>データストアにRDBMSを用いた非同期処理システム</li>
+</ul>
+<small>continued...</small>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>What is Qudo (Review)</h2>
+<ul>
+<li>データストアにRDBMSを用いた非同期処理システム</li>
+<li>元ネタはTheSchwartz</li>
+</ul>
+<small>continued...</small>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>What is Qudo (Review)</h2>
+<ul>
+<li>データストアにRDBMSを用いた非同期処理システム</li>
+<li>元ネタはTheSchwartz</li>
+<li>問題と思ったのは</li>
+
+<ul>
+<li>拡張性</li>
+<li>エラーハンドリング</li>
+<li>モジュール構成</li>
+</ul></ul>
+<small>continued...</small>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>What is Qudo (Review)</h2>
+<ul>
+<li>データストアにRDBMSを用いた非同期処理システム</li>
+<li>元ネタはTheSchwartz</li>
+<li>問題と思ったのは</li>
+
+<ul>
+<li>拡張性</li>
+<li>エラーハンドリング</li>
+<li>モジュール構成</li>
+<li>あとtypo...「 T h e  S c h w a r t z 」</li>
+</ul></ul>
+<small>continued...</small>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>What is Qudo (Review)</h2>
+<ul>
+<li>データストアにRDBMSを用いた非同期処理システム</li>
+<li>元ネタはTheSchwartz</li>
+<li>問題と思ったのは</li>
+
+<ul>
+<li>拡張性</li>
+<li>エラーハンドリング</li>
+<li>モジュール構成</li>
+<li>あとtypo...「 T h e  S c h w a r t z 」</li>
+</ul>
+<li>これらの点を工夫しつつ作ってみた</li>
+</ul>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>Change Points</h2>
+<small>continued...</small>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+<img name="img" id="img" width="350" src="images/qudo2009.jpg" align=right>
+<h2>Change Points</h2>
+<ul>
+<li>YAPC::Asia 2009での発表時との比較</li>
+</ul>
+<p>
+
+</p>
+<small>continued...</small>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+<img name="img" id="img" width="350" src="images/qudo2009.jpg" align=right>
+<h2>Change Points</h2>
+<ul>
+<li>YAPC::Asia 2009での発表時との比較</li>
+</ul>
+<p>
+
+</p>
+<ul>
+<li>CPAN未登録</li>
+</ul>
+<small>continued...</small>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+<img name="img" id="img" width="350" src="images/qudo2009.jpg" align=right>
+<h2>Change Points</h2>
+<ul>
+<li>YAPC::Asia 2009での発表時との比較</li>
+</ul>
+<p>
+
+</p>
+<ul>
+<li>CPAN未登録</li>
+<li>-&gt; UPしました <a href="http://search.cpan.org/~nekokak/Qudo-0.0212/">http://search.cpan.org/~nekokak/Qudo-0.0212/</a></li>
+</ul>
+<small>continued...</small>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+<img name="img" id="img" width="350" src="images/qudo2009.jpg" align=right>
+<h2>Change Points</h2>
+<ul>
+<li>YAPC::Asia 2009での発表時との比較</li>
+</ul>
+<p>
+
+</p>
+<ul>
+<li>CPAN未登録</li>
+<li>-&gt; UPしました <a href="http://search.cpan.org/~nekokak/Qudo-0.0212/">http://search.cpan.org/~nekokak/Qudo-0.0212/</a></li>
+<li>導入実績1社1案件</li>
+</ul>
+<small>continued...</small>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+<img name="img" id="img" width="350" src="images/qudo2009.jpg" align=right>
+<h2>Change Points</h2>
+<ul>
+<li>YAPC::Asia 2009での発表時との比較</li>
+</ul>
+<p>
+
+</p>
+<ul>
+<li>CPAN未登録</li>
+<li>-&gt; UPしました <a href="http://search.cpan.org/~nekokak/Qudo-0.0212/">http://search.cpan.org/~nekokak/Qudo-0.0212/</a></li>
+<li>導入実績1社1案件</li>
+<li>-&gt; 2,3社で15案件程度</li>
+</ul>
+<small>continued...</small>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+<img name="img" id="img" width="350" src="images/qudo2009.jpg" align=right>
+<h2>Change Points</h2>
+<ul>
+<li>YAPC::Asia 2009での発表時との比較</li>
+</ul>
+<p>
+
+</p>
+<ul>
+<li>CPAN未登録</li>
+<li>-&gt; UPしました <a href="http://search.cpan.org/~nekokak/Qudo-0.0212/">http://search.cpan.org/~nekokak/Qudo-0.0212/</a></li>
+<li>導入実績1社1案件</li>
+<li>-&gt; 2,3社で15案件程度</li>
+<li>開発のコラボレーター1人</li>
+</ul>
+<small>continued...</small>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+<img name="img" id="img" width="350" src="images/qudo2009.jpg" align=right>
+<h2>Change Points</h2>
+<ul>
+<li>YAPC::Asia 2009での発表時との比較</li>
+</ul>
+<p>
+
+</p>
+<ul>
+<li>CPAN未登録</li>
+<li>-&gt; UPしました <a href="http://search.cpan.org/~nekokak/Qudo-0.0212/">http://search.cpan.org/~nekokak/Qudo-0.0212/</a></li>
+<li>導入実績1社1案件</li>
+<li>-&gt; 2,3社で15案件程度</li>
+<li>開発のコラボレーター1人</li>
+<li>-&gt; コラボレーター4人 + パッチ提供者</li>
+</ul>
+<small>continued...</small>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+<img name="img" id="img" width="350" src="images/qudo2009.jpg" align=right>
+<h2>Change Points</h2>
+<ul>
+<li>YAPC::Asia 2009での発表時との比較</li>
+</ul>
+<p>
+
+</p>
+<ul>
+<li>CPAN未登録</li>
+<li>-&gt; UPしました <a href="http://search.cpan.org/~nekokak/Qudo-0.0212/">http://search.cpan.org/~nekokak/Qudo-0.0212/</a></li>
+<li>導入実績1社1案件</li>
+<li>-&gt; 2,3社で15案件程度</li>
+<li>開発のコラボレーター1人</li>
+<li>-&gt; コラボレーター4人 + パッチ提供者</li>
+<li>処理規模</li>
+</ul>
+<small>continued...</small>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+<img name="img" id="img" width="350" src="images/qudo2009.jpg" align=right>
+<h2>Change Points</h2>
+<ul>
+<li>YAPC::Asia 2009での発表時との比較</li>
+</ul>
+<p>
+
+</p>
+<ul>
+<li>CPAN未登録</li>
+<li>-&gt; UPしました <a href="http://search.cpan.org/~nekokak/Qudo-0.0212/">http://search.cpan.org/~nekokak/Qudo-0.0212/</a></li>
+<li>導入実績1社1案件</li>
+<li>-&gt; 2,3社で15案件程度</li>
+<li>開発のコラボレーター1人</li>
+<li>-&gt; コラボレーター4人 + パッチ提供者</li>
+<li>処理規模</li>
+
+<ul>
+<li>1サーバーで1,000job／日 程度をさばいているなど</li>
+</ul></ul>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>Change Points</h2>
+<small>continued...</small>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>Change Points</h2>
+<ul>
+<li>複数DBへの接続をサポート</li>
+</ul>
+<small>continued...</small>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>Change Points</h2>
+<ul>
+<li>複数DBへの接続をサポート</li>
+<li>jobにpriority概念を導入</li>
+</ul>
+<small>continued...</small>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>Change Points</h2>
+<ul>
+<li>複数DBへの接続をサポート</li>
+<li>jobにpriority概念を導入</li>
+<li>Worker毎のHook指定機能を除去</li>
+
+<ul>
+<li>global_register_hook等の廃止</li>
+</ul></ul>
+<small>continued...</small>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>Change Points</h2>
+<ul>
+<li>複数DBへの接続をサポート</li>
+<li>jobにpriority概念を導入</li>
+<li>Worker毎のHook指定機能を除去</li>
+
+<ul>
+<li>global_register_hook等の廃止</li>
+</ul>
+<li>jobのメソッド追加</li>
+
+<ul>
+<li>abort</li>
+<li>replace</li>
+</ul></ul>
+<small>continued...</small>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>Change Points</h2>
+<ul>
+<li>複数DBへの接続をサポート</li>
+<li>jobにpriority概念を導入</li>
+<li>Worker毎のHook指定機能を除去</li>
+
+<ul>
+<li>global_register_hook等の廃止</li>
+</ul>
+<li>jobのメソッド追加</li>
+
+<ul>
+<li>abort</li>
+<li>replace</li>
+</ul>
+<li>qudoコマンドから初期スキーマのセットアップ</li>
+</ul>
+<small>continued...</small>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>Change Points</h2>
+<ul>
+<li>複数DBへの接続をサポート</li>
+<li>jobにpriority概念を導入</li>
+<li>Worker毎のHook指定機能を除去</li>
+
+<ul>
+<li>global_register_hook等の廃止</li>
+</ul>
+<li>jobのメソッド追加</li>
+
+<ul>
+<li>abort</li>
+<li>replace</li>
+</ul>
+<li>qudoコマンドから初期スキーマのセットアップ</li>
+<li>別プロジェクトへの切り出し</li>
+</ul>
+<small>continued...</small>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>Change Points</h2>
+<ul>
+<li>複数DBへの接続をサポート</li>
+<li>jobにpriority概念を導入</li>
+<li>Worker毎のHook指定機能を除去</li>
+
+<ul>
+<li>global_register_hook等の廃止</li>
+</ul>
+<li>jobのメソッド追加</li>
+
+<ul>
+<li>abort</li>
+<li>replace</li>
+</ul>
+<li>qudoコマンドから初期スキーマのセットアップ</li>
+<li>別プロジェクトへの切り出し</li>
+
+<ul>
+<li>Qudo::Plugin::*</li>
+
+<ul>
+<li>Workerの処理内で使える便利メソッドが生える系</li>
+</ul></ul></ul>
+<small>continued...</small>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>Change Points</h2>
+<ul>
+<li>複数DBへの接続をサポート</li>
+<li>jobにpriority概念を導入</li>
+<li>Worker毎のHook指定機能を除去</li>
+
+<ul>
+<li>global_register_hook等の廃止</li>
+</ul>
+<li>jobのメソッド追加</li>
+
+<ul>
+<li>abort</li>
+<li>replace</li>
+</ul>
+<li>qudoコマンドから初期スキーマのセットアップ</li>
+<li>別プロジェクトへの切り出し</li>
+
+<ul>
+<li>Qudo::Plugin::*</li>
+
+<ul>
+<li>Workerの処理内で使える便利メソッドが生える系</li>
+</ul>
+<li>Qudo::Hook::*</li>
+
+<ul>
+<li>どこかのhook pointで実行する系</li>
+</ul></ul></ul>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>Ohter Distribution</h2>
+<ul>
+<li>Qudo::Plugin::Logger</li>
+<li>Qudo::Hook::Notify</li>
+<li>Qudo::Hook::ForceQuitJob</li>
+<li>Qudo::Parallel::Manager</li>
+<li>Qudo::Parallel::Worker</li>
+<li>Qudo::Driver::DBI</li>
+<li>Qudo-Wiki</li>
+<li>Qudo::Web</li>
+</ul>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>Qudo::Plugin::Logger</h2>
+<small>continued...</small>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>Qudo::Plugin::Logger</h2>
+<ul>
+<li>Plugin系では現時点唯一の別ディストリビューション</li>
+</ul>
+<small>continued...</small>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>Qudo::Plugin::Logger</h2>
+<ul>
+<li>Plugin系では現時点唯一の別ディストリビューション</li>
+<li>内部ではLog::Dispatchを使用</li>
+</ul>
+<small>continued...</small>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>Qudo::Plugin::Logger</h2>
+<ul>
+<li>Plugin系では現時点唯一の別ディストリビューション</li>
+<li>内部ではLog::Dispatchを使用</li>
+</ul>
+<pre class="formatter_pre">
+   $manager-&gt;register_plugins&#40;
+       +{
+           name =&gt; &#39;Qudo::Plugin::Logger&#39;,
+           option =&gt; +{
+               dispatchers =&gt; [&#39;screen&#39;],
+               screen =&gt; {
+                   class     =&gt; &#39;Log::Dispatch::Screen&#39;,
+                   min_level =&gt; &#39;debug&#39;,
+                   stderr    =&gt; 0,
+               },
+           },
+       }
+   &#41;;
+   $job-&gt;manager-&gt;plugin-&gt;{logger}-&gt;debug&#40;&#39;debug message here.&#39;&#41;;
+</pre>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>Qudo::Hook::Notify</h2>
+<small>continued...</small>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>Qudo::Hook::Notify</h2>
+<ul>
+<li>Jobが正常終了しなかった場合に検知するためのもの</li>
+</ul>
+<small>continued...</small>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>Qudo::Hook::Notify</h2>
+<ul>
+<li>Jobが正常終了しなかった場合に検知するためのもの</li>
+<li>Qudo::Hook::Notify::Abort</li>
+
+<ul>
+<li>Qudo::Jobのmethodで設けている -&gt; 明示的に抜ける</li>
+</ul></ul>
+<small>continued...</small>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>Qudo::Hook::Notify</h2>
+<ul>
+<li>Jobが正常終了しなかった場合に検知するためのもの</li>
+<li>Qudo::Hook::Notify::Abort</li>
+
+<ul>
+<li>Qudo::Jobのmethodで設けている -&gt; 明示的に抜ける</li>
+</ul>
+<li>Qudo::Hook::Notify::Failed</li>
+
+<ul>
+<li>completedフラグが立たない or 例外発生による失敗</li>
+</ul></ul>
+<small>continued...</small>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>Qudo::Hook::Notify</h2>
+<ul>
+<li>Jobが正常終了しなかった場合に検知するためのもの</li>
+<li>Qudo::Hook::Notify::Abort</li>
+
+<ul>
+<li>Qudo::Jobのmethodで設けている -&gt; 明示的に抜ける</li>
+</ul>
+<li>Qudo::Hook::Notify::Failed</li>
+
+<ul>
+<li>completedフラグが立たない or 例外発生による失敗</li>
+</ul>
+<li>Qudo::Hook::Notify::ReachMaxRetry</li>
+
+<ul>
+<li>各workerのmax_retriesの設定値と比較</li>
+</ul></ul>
+<small>continued...</small>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>Qudo::Hook::Notify</h2>
+<ul>
+<li>Jobが正常終了しなかった場合に検知するためのもの</li>
+<li>Qudo::Hook::Notify::Abort</li>
+
+<ul>
+<li>Qudo::Jobのmethodで設けている -&gt; 明示的に抜ける</li>
+</ul>
+<li>Qudo::Hook::Notify::Failed</li>
+
+<ul>
+<li>completedフラグが立たない or 例外発生による失敗</li>
+</ul>
+<li>Qudo::Hook::Notify::ReachMaxRetry</li>
+
+<ul>
+<li>各workerのmax_retriesの設定値と比較</li>
+</ul>
+<li>Qudo::Plugin::Loggerと合わせて使うのを想定している</li>
+
+<ul>
+<li>検知したものをメール送信するなど</li>
+</ul></ul>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>Qudo::Hook::ForceQuitJob</h2>
+<small>continued...</small>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>Qudo::Hook::ForceQuitJob</h2>
+<ul>
+<li>各workerで設定可能なgrab_forの値を利用する</li>
+</ul>
+<small>continued...</small>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>Qudo::Hook::ForceQuitJob</h2>
+<ul>
+<li>各workerで設定可能なgrab_forの値を利用する</li>
+<li>jobの処理時間がこの値よりかかった場合、処理を中断&#40;=die&#41;する</li>
+
+<ul>
+<li>grab_forは標準で3600秒</li>
+<li>このHookを設定してもgrab_forが0ならば設定は無効</li>
+</ul></ul>
+<small>continued...</small>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>Qudo::Hook::ForceQuitJob</h2>
+<ul>
+<li>各workerで設定可能なgrab_forの値を利用する</li>
+<li>jobの処理時間がこの値よりかかった場合、処理を中断&#40;=die&#41;する</li>
+
+<ul>
+<li>grab_forは標準で3600秒</li>
+<li>このHookを設定してもgrab_forが0ならば設定は無効</li>
+</ul>
+<li>各workerのdie自体はQudo::Workerのevalによって拾われるためExceptionとして管理出来る</li>
+</ul>
+<small>continued...</small>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>Qudo::Hook::ForceQuitJob</h2>
+<ul>
+<li>各workerで設定可能なgrab_forの値を利用する</li>
+<li>jobの処理時間がこの値よりかかった場合、処理を中断&#40;=die&#41;する</li>
+
+<ul>
+<li>grab_forは標準で3600秒</li>
+<li>このHookを設定してもgrab_forが0ならば設定は無効</li>
+</ul>
+<li>各workerのdie自体はQudo::Workerのevalによって拾われるためExceptionとして管理出来る</li>
+<li>未CPAN UP</li>
+</ul>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>Qudo::Parallel::Manager</h2>
+<small>continued...</small>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>Qudo::Parallel::Manager</h2>
+<ul>
+<li>workerのプロセス管理を行える</li>
+</ul>
+<small>continued...</small>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>Qudo::Parallel::Manager</h2>
+<ul>
+<li>workerのプロセス管理を行える</li>
+<li>内部ではParallel::Prefork::SpareWorkersを使用</li>
+</ul>
+<small>continued...</small>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>Qudo::Parallel::Manager</h2>
+<ul>
+<li>workerのプロセス管理を行える</li>
+<li>内部ではParallel::Prefork::SpareWorkersを使用</li>
+<li>スコアボードが見られたりなど</li>
+</ul>
+<small>continued...</small>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>Qudo::Parallel::Manager</h2>
+<ul>
+<li>workerのプロセス管理を行える</li>
+<li>内部ではParallel::Prefork::SpareWorkersを使用</li>
+<li>スコアボードが見られたりなど</li>
+<li>さらにCloudForecastを使えば、グラフ化も可能</li>
+</ul>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>Qudo::Parallel::Worker</h2>
+<small>continued...</small>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>Qudo::Parallel::Worker</h2>
+<ul>
+<li>まだアルファ版レベル</li>
+</ul>
+<small>continued...</small>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>Qudo::Parallel::Worker</h2>
+<ul>
+<li>まだアルファ版レベル</li>
+<li>Forkではなく、複数の関連するWorkerを管理するためのWorker</li>
+</ul>
+<small>continued...</small>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>Qudo::Parallel::Worker</h2>
+<ul>
+<li>まだアルファ版レベル</li>
+<li>Forkではなく、複数の関連するWorkerを管理するためのWorker</li>
+<li>Jobから複数の子Jobにjobを分割するのはreplace</li>
+</ul>
+<small>continued...</small>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>Qudo::Parallel::Worker</h2>
+<ul>
+<li>まだアルファ版レベル</li>
+<li>Forkではなく、複数の関連するWorkerを管理するためのWorker</li>
+<li>Jobから複数の子Jobにjobを分割するのはreplace</li>
+<li>複数に分割した子jobが全部終了したことを確認して子Jobが全部終了したあとに別のJobを処理させたいはこちら</li>
+</ul>
+<small>continued...</small>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>Qudo::Parallel::Worker</h2>
+<ul>
+<li>まだアルファ版レベル</li>
+<li>Forkではなく、複数の関連するWorkerを管理するためのWorker</li>
+<li>Jobから複数の子Jobにjobを分割するのはreplace</li>
+<li>複数に分割した子jobが全部終了したことを確認して子Jobが全部終了したあとに別のJobを処理させたいはこちら</li>
+<li>使用実績はまだない</li>
+</ul>
+<small>continued...</small>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>Qudo::Parallel::Worker</h2>
+<ul>
+<li>まだアルファ版レベル</li>
+<li>Forkではなく、複数の関連するWorkerを管理するためのWorker</li>
+<li>Jobから複数の子Jobにjobを分割するのはreplace</li>
+<li>複数に分割した子jobが全部終了したことを確認して子Jobが全部終了したあとに別のJobを処理させたいはこちら</li>
+<li>使用実績はまだない</li>
+<li>未CPAN UP</li>
+</ul>
+<small>continued...</small>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>Qudo::Parallel::Worker</h2>
+<ul>
+<li>まだアルファ版レベル</li>
+<li>Forkではなく、複数の関連するWorkerを管理するためのWorker</li>
+<li>Jobから複数の子Jobにjobを分割するのはreplace</li>
+<li>複数に分割した子jobが全部終了したことを確認して子Jobが全部終了したあとに別のJobを処理させたいはこちら</li>
+<li>使用実績はまだない</li>
+<li>未CPAN UP</li>
+<li>今後に期待age</li>
+</ul>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>Qudo::Driver::DBI</h2>
+<small>continued...</small>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>Qudo::Driver::DBI</h2>
+<ul>
+<li>初期にはQudo本体にパッケージングされていた</li>
+</ul>
+<small>continued...</small>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>Qudo::Driver::DBI</h2>
+<ul>
+<li>初期にはQudo本体にパッケージングされていた</li>
+<li>DBとの接続部分を生のDBIでやりとりする場合に使用</li>
+</ul>
+<small>continued...</small>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>Qudo::Driver::DBI</h2>
+<ul>
+<li>初期にはQudo本体にパッケージングされていた</li>
+<li>DBとの接続部分を生のDBIでやりとりする場合に使用</li>
+<li>メンテの問題とDBIx::Skinnyの台頭もあり別ディストリビューション化</li>
+</ul>
+<small>continued...</small>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>Qudo::Driver::DBI</h2>
+<ul>
+<li>初期にはQudo本体にパッケージングされていた</li>
+<li>DBとの接続部分を生のDBIでやりとりする場合に使用</li>
+<li>メンテの問題とDBIx::Skinnyの台頭もあり別ディストリビューション化</li>
+<li>現時点では本体に追従出来ている&#40;ハズ&#41;</li>
+</ul>
+<small>continued...</small>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>Qudo::Driver::DBI</h2>
+<ul>
+<li>初期にはQudo本体にパッケージングされていた</li>
+<li>DBとの接続部分を生のDBIでやりとりする場合に使用</li>
+<li>メンテの問題とDBIx::Skinnyの台頭もあり別ディストリビューション化</li>
+<li>現時点では本体に追従出来ている&#40;ハズ&#41;</li>
+<li>テスト方法の改善は必要</li>
+</ul>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>Qudo::Driver::DBI</h2>
+<small>continued...</small>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>Qudo::Driver::DBI</h2>
+<ul>
+<li>ベンチマーク</li>
+
+<ul>
+<li><a href="http://github.com/walf443/p5-app-benchmark-job_queue">http://github.com/walf443/p5-app-benchmark-job_queue</a></li>
+</ul></ul>
+<small>continued...</small>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>Qudo::Driver::DBI</h2>
+<ul>
+<li>ベンチマーク</li>
+
+<ul>
+<li><a href="http://github.com/walf443/p5-app-benchmark-job_queue">http://github.com/walf443/p5-app-benchmark-job_queue</a></li>
+<li><a href="http://gist.github.com/479667">http://gist.github.com/479667</a></li>
+</ul></ul>
+<pre class="formatter_pre">                             Rate qudo_skinny the_schwartz qudo_dbi the_schwartz_cached qudo_skinny_cached the_schwartz_simple gearman gearman_xs qudo_dbi_cached gearman_cached the_schwartz_simple_cached
+qudo_skinny                 188/s          --         -16%     -46%                -55%               -65%                -72%    -75%       -76%            -86%           -95%                       -96%
+the_schwartz                225/s         20%           --     -35%                -46%               -58%                -67%    -70%       -71%            -84%           -93%                       -95%
+qudo_dbi                    346/s         84%          54%       --                -16%               -35%                -48%    -54%       -56%            -75%           -90%                       -92%
+the_schwartz_cached         413/s        120%          84%      19%                  --               -23%                -38%    -45%       -47%            -70%           -88%                       -90%
+qudo_skinny_cached          535/s        184%         138%      55%                 29%                 --                -20%    -29%       -32%            -61%           -84%                       -88%
+the_schwartz_simple         671/s        257%         199%      94%                 62%                26%                  --    -11%       -14%            -51%           -81%                       -85%
+gearman                     758/s        303%         237%     119%                 83%                42%                 13%      --        -3%            -45%           -78%                       -83%
+gearman_xs                  781/s        316%         248%     126%                 89%                46%                 16%      3%         --            -43%           -77%                       -82%
+qudo_dbi_cached            1370/s        629%         510%     296%                232%               156%                104%     81%        75%              --           -60%                       -68%
+gearman_cached             3448/s       1734%        1434%     897%                734%               545%                414%    355%       341%            152%             --                       -21%
+the_schwartz_simple_cached 4348/s       2213%        1835%    1157%                952%               713%                548%    474%       457%            217%            26%                         --
+</pre>
+<small>continued...</small>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>Qudo::Driver::DBI</h2>
+<ul>
+<li>ベンチマーク</li>
+
+<ul>
+<li><a href="http://github.com/walf443/p5-app-benchmark-job_queue">http://github.com/walf443/p5-app-benchmark-job_queue</a></li>
+<li><a href="http://gist.github.com/479667">http://gist.github.com/479667</a></li>
+</ul></ul>
+<pre class="formatter_pre">                             Rate qudo_skinny the_schwartz qudo_dbi the_schwartz_cached qudo_skinny_cached the_schwartz_simple gearman gearman_xs qudo_dbi_cached gearman_cached the_schwartz_simple_cached
+qudo_skinny                 188/s          --         -16%     -46%                -55%               -65%                -72%    -75%       -76%            -86%           -95%                       -96%
+the_schwartz                225/s         20%           --     -35%                -46%               -58%                -67%    -70%       -71%            -84%           -93%                       -95%
+qudo_dbi                    346/s         84%          54%       --                -16%               -35%                -48%    -54%       -56%            -75%           -90%                       -92%
+the_schwartz_cached         413/s        120%          84%      19%                  --               -23%                -38%    -45%       -47%            -70%           -88%                       -90%
+qudo_skinny_cached          535/s        184%         138%      55%                 29%                 --                -20%    -29%       -32%            -61%           -84%                       -88%
+the_schwartz_simple         671/s        257%         199%      94%                 62%                26%                  --    -11%       -14%            -51%           -81%                       -85%
+gearman                     758/s        303%         237%     119%                 83%                42%                 13%      --        -3%            -45%           -78%                       -83%
+gearman_xs                  781/s        316%         248%     126%                 89%                46%                 16%      3%         --            -43%           -77%                       -82%
+qudo_dbi_cached            1370/s        629%         510%     296%                232%               156%                104%     81%        75%              --           -60%                       -68%
+gearman_cached             3448/s       1734%        1434%     897%                734%               545%                414%    355%       341%            152%             --                       -21%
+the_schwartz_simple_cached 4348/s       2213%        1835%    1157%                952%               713%                548%    474%       457%            217%            26%                         --
+</pre>
+<ul>
+<li>標準のSkinny版よりちょっとだけ早い</li>
+</ul>
+<small>continued...</small>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>Qudo::Driver::DBI</h2>
+<ul>
+<li>ベンチマーク</li>
+
+<ul>
+<li><a href="http://github.com/walf443/p5-app-benchmark-job_queue">http://github.com/walf443/p5-app-benchmark-job_queue</a></li>
+<li><a href="http://gist.github.com/479667">http://gist.github.com/479667</a></li>
+</ul></ul>
+<pre class="formatter_pre">                             Rate qudo_skinny the_schwartz qudo_dbi the_schwartz_cached qudo_skinny_cached the_schwartz_simple gearman gearman_xs qudo_dbi_cached gearman_cached the_schwartz_simple_cached
+qudo_skinny                 188/s          --         -16%     -46%                -55%               -65%                -72%    -75%       -76%            -86%           -95%                       -96%
+the_schwartz                225/s         20%           --     -35%                -46%               -58%                -67%    -70%       -71%            -84%           -93%                       -95%
+qudo_dbi                    346/s         84%          54%       --                -16%               -35%                -48%    -54%       -56%            -75%           -90%                       -92%
+the_schwartz_cached         413/s        120%          84%      19%                  --               -23%                -38%    -45%       -47%            -70%           -88%                       -90%
+qudo_skinny_cached          535/s        184%         138%      55%                 29%                 --                -20%    -29%       -32%            -61%           -84%                       -88%
+the_schwartz_simple         671/s        257%         199%      94%                 62%                26%                  --    -11%       -14%            -51%           -81%                       -85%
+gearman                     758/s        303%         237%     119%                 83%                42%                 13%      --        -3%            -45%           -78%                       -83%
+gearman_xs                  781/s        316%         248%     126%                 89%                46%                 16%      3%         --            -43%           -77%                       -82%
+qudo_dbi_cached            1370/s        629%         510%     296%                232%               156%                104%     81%        75%              --           -60%                       -68%
+gearman_cached             3448/s       1734%        1434%     897%                734%               545%                414%    355%       341%            152%             --                       -21%
+the_schwartz_simple_cached 4348/s       2213%        1835%    1157%                952%               713%                548%    474%       457%            217%            26%                         --
+</pre>
+<ul>
+<li>標準のSkinny版よりちょっとだけ早い</li>
+<li>メンテナは募集中です</li>
+</ul>
+<small>continued...</small>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>Qudo::Driver::DBI</h2>
+<ul>
+<li>ベンチマーク</li>
+
+<ul>
+<li><a href="http://github.com/walf443/p5-app-benchmark-job_queue">http://github.com/walf443/p5-app-benchmark-job_queue</a></li>
+<li><a href="http://gist.github.com/479667">http://gist.github.com/479667</a></li>
+</ul></ul>
+<pre class="formatter_pre">                             Rate qudo_skinny the_schwartz qudo_dbi the_schwartz_cached qudo_skinny_cached the_schwartz_simple gearman gearman_xs qudo_dbi_cached gearman_cached the_schwartz_simple_cached
+qudo_skinny                 188/s          --         -16%     -46%                -55%               -65%                -72%    -75%       -76%            -86%           -95%                       -96%
+the_schwartz                225/s         20%           --     -35%                -46%               -58%                -67%    -70%       -71%            -84%           -93%                       -95%
+qudo_dbi                    346/s         84%          54%       --                -16%               -35%                -48%    -54%       -56%            -75%           -90%                       -92%
+the_schwartz_cached         413/s        120%          84%      19%                  --               -23%                -38%    -45%       -47%            -70%           -88%                       -90%
+qudo_skinny_cached          535/s        184%         138%      55%                 29%                 --                -20%    -29%       -32%            -61%           -84%                       -88%
+the_schwartz_simple         671/s        257%         199%      94%                 62%                26%                  --    -11%       -14%            -51%           -81%                       -85%
+gearman                     758/s        303%         237%     119%                 83%                42%                 13%      --        -3%            -45%           -78%                       -83%
+gearman_xs                  781/s        316%         248%     126%                 89%                46%                 16%      3%         --            -43%           -77%                       -82%
+qudo_dbi_cached            1370/s        629%         510%     296%                232%               156%                104%     81%        75%              --           -60%                       -68%
+gearman_cached             3448/s       1734%        1434%     897%                734%               545%                414%    355%       341%            152%             --                       -21%
+the_schwartz_simple_cached 4348/s       2213%        1835%    1157%                952%               713%                548%    474%       457%            217%            26%                         --
+</pre>
+<ul>
+<li>標準のSkinny版よりちょっとだけ早い</li>
+<li>メンテナは募集中です</li>
+<li>未CPAN UP</li>
+</ul>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>Qudo-Wiki</h2>
+<small>continued...</small>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>Qudo-Wiki</h2>
+<ul>
+<li><a href="http://wiki.qudo.org/">http://wiki.qudo.org/</a></li>
+</ul>
+<small>continued...</small>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>Qudo-Wiki</h2>
+<ul>
+<li><a href="http://wiki.qudo.org/">http://wiki.qudo.org/</a></li>
+<li>まだあんまり書けてない</li>
+</ul>
+<small>continued...</small>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>Qudo-Wiki</h2>
+<ul>
+<li><a href="http://wiki.qudo.org/">http://wiki.qudo.org/</a></li>
+<li>まだあんまり書けてない</li>
+<li>wikiなので、書きたい人は誰でも書いてOK</li>
+</ul>
+<small>continued...</small>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>Qudo-Wiki</h2>
+<ul>
+<li><a href="http://wiki.qudo.org/">http://wiki.qudo.org/</a></li>
+<li>まだあんまり書けてない</li>
+<li>wikiなので、書きたい人は誰でも書いてOK</li>
+<li>#qudo@irc.perl.org にて一言ご連絡ください</li>
+</ul>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>Qudo::Web</h2>
+<small>continued...</small>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>Qudo::Web</h2>
+<ul>
+<li>開発停滞中</li>
+</ul>
+<small>continued...</small>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>Qudo::Web</h2>
+<ul>
+<li>開発停滞中</li>
+<li>DBをイチイチ覗かずにWeb上からJobの状態確認をする</li>
+
+<ul>
+<li>cf:TheSchwartz::Web</li>
+</ul></ul>
+<small>continued...</small>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>Qudo::Web</h2>
+<ul>
+<li>開発停滞中</li>
+<li>DBをイチイチ覗かずにWeb上からJobの状態確認をする</li>
+
+<ul>
+<li>cf:TheSchwartz::Web</li>
+</ul>
+<li>未CPAN UP</li>
+</ul>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>Conclusion</h2>
+<small>continued...</small>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>Conclusion</h2>
+<ul>
+<li>repos</li>
+</ul>
+<small>continued...</small>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>Conclusion</h2>
+<ul>
+<li>repos</li>
+
+<ul>
+<li><a href="http://github.com/nekokak/qudo">http://github.com/nekokak/qudo</a></li>
+<li>その他のモジュールも基本github上にアップ済み</li>
+</ul></ul>
+<small>continued...</small>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>Conclusion</h2>
+<ul>
+<li>repos</li>
+
+<ul>
+<li><a href="http://github.com/nekokak/qudo">http://github.com/nekokak/qudo</a></li>
+<li>その他のモジュールも基本github上にアップ済み</li>
+</ul>
+<li>IRC</li>
+</ul>
+<small>continued...</small>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>Conclusion</h2>
+<ul>
+<li>repos</li>
+
+<ul>
+<li><a href="http://github.com/nekokak/qudo">http://github.com/nekokak/qudo</a></li>
+<li>その他のモジュールも基本github上にアップ済み</li>
+</ul>
+<li>IRC</li>
+
+<ul>
+<li>#qudo@irc.perl.org</li>
+</ul></ul>
+<small>continued...</small>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>Conclusion</h2>
+<ul>
+<li>repos</li>
+
+<ul>
+<li><a href="http://github.com/nekokak/qudo">http://github.com/nekokak/qudo</a></li>
+<li>その他のモジュールも基本github上にアップ済み</li>
+</ul>
+<li>IRC</li>
+
+<ul>
+<li>#qudo@irc.perl.org</li>
+</ul>
+<li>引き続き開発していく予定です</li>
+</ul>
+<small>continued...</small>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>Conclusion</h2>
+<ul>
+<li>repos</li>
+
+<ul>
+<li><a href="http://github.com/nekokak/qudo">http://github.com/nekokak/qudo</a></li>
+<li>その他のモジュールも基本github上にアップ済み</li>
+</ul>
+<li>IRC</li>
+
+<ul>
+<li>#qudo@irc.perl.org</li>
+</ul>
+<li>引き続き開発していく予定です</li>
+<li>良ければ、試しに使っていただいてフィードバック貰えると嬉しいです</li>
+</ul>
+<small>continued...</small>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>Conclusion</h2>
+<ul>
+<li>repos</li>
+
+<ul>
+<li><a href="http://github.com/nekokak/qudo">http://github.com/nekokak/qudo</a></li>
+<li>その他のモジュールも基本github上にアップ済み</li>
+</ul>
+<li>IRC</li>
+
+<ul>
+<li>#qudo@irc.perl.org</li>
+</ul>
+<li>引き続き開発していく予定です</li>
+<li>良ければ、試しに使っていただいてフィードバック貰えると嬉しいです</li>
+
+<ul>
+<li>良ければ、「ミクシィおもしろい」エントリ書いてくれると嬉しいです&#40;お金は払いません&#41;</li>
+</ul></ul>
+
+</div>
+<!-- END slide -->
+
+
+<!-- BEGIN slide -->
+<div class="slide">
+
+<h2>Thank you</h2>
+<ul>
+<li>ご静聴ありがとうございました</li>
+</ul>
+
+</div>
+<!-- END slide -->
+
+
+</body>
+</html>
+<!-- END s5 -->
